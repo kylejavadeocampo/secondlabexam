@@ -43,8 +43,9 @@ $tab = "container border border-3 border-secondary rounded-3 p-1 mx-auto bg-ligh
                             <th><?php echo $row['book_category'] ?></th>
                             <th><?php echo $row['book_publisher'] ?></th>
                             <th><?php echo $row['book_isbn'] ?></th>
-                            <th>
-                                <a class="btn btn-warning" href="book_edit.php?id=<?php echo $row['book_id']?>">Edit</a>
+                            <th class="d-flex justify-content-evenly">
+                                <a class="btn btn-warning m-1" href="book_edit.php?id=<?php echo $row['book_id']?>">Edit</a>
+                                <a class="btn btn-danger m-1" href="book_delete.php?id=<?php echo $row['book_id']?>">Delete</a>
                             </th>
                         </tr>
                         <?php } ?>
